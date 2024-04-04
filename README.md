@@ -15,7 +15,7 @@ At this time, in order to minimize personal information leakage, the certificate
 [![Video Label](http://img.youtube.com/vi/.jpg)](https://youtu.be/)
 
 ## 4. 팀 소개
-|<img width="60" src="https://github.com/.png">|
+|<img width="60" src="https://github.com/.png">|X|
 |---|---|
 |[김수연(****1563)(https://github.com/suyeon1104)|[이윤서(****1)|
 |기획/개발|디자인/테스트|
