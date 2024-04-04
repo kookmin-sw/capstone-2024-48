@@ -13,7 +13,7 @@
 - GitHub Pages 리파지토리 Settings > Options > GitHub Pages 
   - Source를 marster branch
   - Theme Chooser에서 테마 선택
-  - 수정후 팀페이지 확인하여 점검.
+  - 수정 후 팀 페이지 확인하여 점검.
 
 
 
@@ -29,12 +29,12 @@
 ### 3. 팀 소개
 
   - 프로젝트 소개 및 팀원 소개
-  - index.md 예시보고 수정.
+  - index.md 예시 보고 수정.
 팀원정보 및 담당이나 사진 및 SNS를 이용하여 소개하세요.
 
 ### 4. 사용법
 
-소스코드제출시 설치법이나 사용법을 작성하세요.
+소스코드 제출 시 설치법이나 사용법을 작성하세요.
 
 ### 5. 기타
 
@@ -43,7 +43,7 @@
 
 ## Markdown을 사용하여 내용꾸미기
 
-Markdown은 작문을 스타일링하기위한 가볍고 사용하기 쉬운 구문입니다. 여기에는 다음을위한 규칙이 포함됩니다.
+Markdown은 작문을 스타일링하기 위한 가볍고 사용하기 쉬운 구문입니다. 여기에는 다음을 위한 규칙이 포함됩니다.
 
 ```markdown
 Syntax highlighted code block
