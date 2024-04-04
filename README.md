@@ -2,41 +2,26 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=14573272&assignment_repo_type=AssignmentRepo)
 # 분산 신원(DID) 기반 학사증명 시스템
 
-## 팀소개 및 페이지를 꾸며주세요.
-
-- 프로젝트 소개
-
-
-- 팀페이지 꾸미기
-
-
-- GitHub Pages 리파지토리 Settings > Options > GitHub Pages 
-  - Source를 marster branch
-  - Theme Chooser에서 테마 선택
-  - 수정 후 팀 페이지 확인하여 점검.
-
-
-
-### 1. 프로잭트 소개
+## 1. 프로잭트 소개
 
   - 프로젝트 설치방법 및 데모, 사용방법, 프리뷰등을 readme.md에 작성.
   - Api나 사용방법등 내용이 많을경우 wiki에 꾸미고 링크 추가.
 
-### 2. 소개 영상
+## 2. 소개 영상
 
 프로젝트 소개하는 영상을 추가하세요
 
-### 3. 팀 소개
+## 3. 팀 소개
 
   - 프로젝트 소개 및 팀원 소개
   - index.md 예시 보고 수정.
 팀원정보 및 담당이나 사진 및 SNS를 이용하여 소개하세요.
 
-### 4. 사용법
+## 4. 사용법
 
 소스코드 제출 시 설치법이나 사용법을 작성하세요.
 
-### 5. 기타
+## 5. 기타
 
 추가적인 내용은 자유롭게 작성하세요.
 
@@ -65,6 +50,6 @@ Syntax highlighted code block
 
 자세한 내용은 [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Support or Contact
+## Support or Contact
 
 readme 파일 생성에 추가적인 도움이 필요하면 [도움말](https://help.github.com/articles/about-readmes/) 이나 [contact support](https://github.com/contact) 을 이용하세요.
