@@ -17,7 +17,7 @@ At this time, in order to minimize personal information leakage, the certificate
 ## 4. 팀 소개
 |<img width="60" src="https://github.com/.png">|X|
 |---|---|
-|[김수연(****1563)(https://github.com/suyeon1104)|[이윤서(****1)|
+|[김수연(****1563)([https://github.com/suyeon1104](https://avatars.githubusercontent.com/u/55120700?s=400&u=6529f056a868415a5cfd27f1444be30876c2c8e3&v=4))|[이윤(****1)|
 |기획/개발|디자인/테스트|
 ## 5. 사용법
 
