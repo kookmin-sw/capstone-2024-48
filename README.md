@@ -15,7 +15,7 @@ At this time, in order to minimize personal information leakage, the certificate
 [![Video Label](http://img.youtube.com/vi/.jpg)](https://youtu.be/)
 
 ## 4. 팀 소개
-|<img width="60" src="https://avatars.githubusercontent.com/u/55120700?s=400&u=6529f056a868415a5cfd27f1444be30876c2c8e3&v=4">|<img width="60" src="[![Uploading KakaoTalk_20240405_092329329.jpg]()](https://github.com/kookmin-sw/capstone-2024-48/master/images/yoon.png)>|
+|<img width="60" src="https://avatars.githubusercontent.com/u/55120700?s=400&u=6529f056a868415a5cfd27f1444be30876c2c8e3&v=4">|<img width="60" src="https://github.com/kookmin-sw/capstone-2024-48/master/images/yoon.png">|
 |---|---|
 |[김수연(****1563)](https://github.com/suyeon1104)|이윤성(****1617)|
 
