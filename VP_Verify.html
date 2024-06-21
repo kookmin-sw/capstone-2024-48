@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="qr-code-styling.js"></script>
+    <script src="html5-qrcode.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div style="text-align:center"><img src="takeQR.png" style="vertical-align: middle;">QR 촬영</div>
+    <div style="display: flex; flex-direction:column; align-items: center">
+      <div id="qrarea" style="width:300px; height:300px">
+          <div id="show" style="display: none; width:300px; height:300px"></div>
+          <div id="cameraview" style="display: none; width:300px; height:300px; flex-direction:column; justify-content: center"></div>
+    </div>
+      <div style="text-align:center"><img src="qrscan.png" style="vertical-align: middle;"> QR 코드를 스캔하세요.</div>
+      <div style="width: 100%; text-align:center; display:flex; justify-content: space-evenly">
+          <button id="showQR" style="height: 50px; background:none; border:none; cursor: pointer;"
+          onclick="showQR('https://www.naver.com/')"><img src="qrscan.png" style="vertical-align: middle;">나의 QR</button>
+          <button id="varifyQR" style="height: 50px; background:none; border:none; cursor: pointer;" onclick="verifyQR()">
+          <img src="takeQR.png" style="vertical-align: middle;">QR 검증</button>
+      </div>
+  </div>
+</body>
+
+<script>
+  let qrCode, timer, html5QrCode;
+  let idxLink = 0;
+  let arrLink = ['https://www.naver.com/', 'https://www.google.com/', 'https://www.facebook.com/', 'https://www.github.com/'];
+  function showQR(qrData) {
+    try {
+      html5QrCode.stop();
+    } catch (ex) {
+      console.log(ex + ": camera is still running!");
+    };
+    options = {
+      width: 300,
+      height: 300,
+      type: "svg",
+      data: qrData,
+      imageOptions: {
+          crossOrigin: "anonymous",
+          margin: 0
+      }
+    };
+    qrCode = new QRCodeStyling(options);
+    qrCode.append(document.getElementById("show"));
+    document.getElementById("show").style.display = "flex";
+    document.getElementById("cameraview").style.display = "none";
+
+    updateQR(qrData);
+    timer = setInterval(() => {
+      console.log("show: " + timer);
+      updateQR(qrData);
+    }, 5000);
+  }
+
+  function updateQR(qrData) {
+    idxLink = (idxLink + 1) % 4;
+    qrData = arrLink[idxLink];
+    // qrData = prompt("QR 링크를 입력해!", "");
+    if (qrData && qrData != "") {
+      options = {
+        width: 300,
+        height: 300,
+        type: "svg",
+        data: qrData,
+        imageOptions: {
+            crossOrigin: "anonymous",
+            margin: 0
+        }
+      };
+      qrCode.update(options);
+    }
+  }
+
+  /*
+  function onScanSuccess(decodedText, decodedResult) {
+    console.log('Code matched = ${decodedText}', decodedResult);
+    alert('scan success');
+  }
+
+  function onScanFailure(error) {
+    console.warn('Code scan error = ${error}');
+  }
+  */
+
+  function verifyQR() {
+    if (timer != null) {
+      console.log("very: " + timer);
+      clearInterval(timer);
+    }
+    document.getElementById("show").style.display = "none";
+    document.getElementById("cameraview").style.display = "flex";
+
+    html5QrCode = new Html5Qrcode("cameraview");
+    html5QrCode.start(
+      { 
+        facingMode: "environment",
+      },
+      {
+        fps: 10,
+      },
+      (decodedText, decodedResult) => {
+        console.log('decodedText: ' + decodedText);
+        alert(decodedText);
+        // do something when code is read
+      },
+      (errorMessage) => {
+        console.log('error: ' + errorMessage);
+        // parse error, ignore it.
+      })
+    .catch((err) => {
+      // Start failed, handle it.
+    });
+  }
+  </script>
+</html>
+</html>
